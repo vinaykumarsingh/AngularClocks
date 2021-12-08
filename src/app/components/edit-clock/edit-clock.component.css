@@ -1,0 +1,37 @@
+.formControlContainer {
+    margin-bottom: 13px;
+}
+.formControl{
+    padding: 10px;
+    padding-bottom: 0px;
+    width: 460px;
+    display: flex;
+    justify-content: space-between;
+}
+.formControl input {
+    width: 200px;
+    height: 25px;
+}
+
+.invalidMessageContainer {
+    padding-left: 10px;
+    color: red;
+}
+.formContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.buttonContainer button{
+    padding: 5px 10px;
+    margin: 10px;
+}
+.invalidControl {
+    border-color: red;
+}
+form {
+    display: flex;
+}
+.field-container {
+    margin-left: 50px;
+}

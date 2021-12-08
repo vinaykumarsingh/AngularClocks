@@ -1,0 +1,58 @@
+<div class="editclockForm">
+  <form [formGroup]="editTimeForm" (ngSubmit)="onSubmit()">
+    <div class="field-container">
+      <mat-form-field>
+        <mat-select formControlName="hours" placeholder="Hours">
+          <mat-option *ngFor="let hour of hours" [value]="hour.id">
+            {{hour.value}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+  
+      <div *ngIf="submitted && editTimeForm.controls.hours.errors" class="invalidMessageContainer">
+        <div *ngIf="editTimeForm.controls.hours.errors.required">hours is required</div>
+      </div>
+    </div>
+
+    <!-- <br> -->
+    <div class="field-container">
+
+  <mat-form-field>
+    <mat-select formControlName="minutes" placeholder="Minute">
+      <mat-option *ngFor="let minute of minutes" [value]="minute.id">
+        {{minute.value}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <div *ngIf="submitted && editTimeForm.controls.minutes.errors" class="invalidMessageContainer">
+    <div *ngIf="editTimeForm.controls.minutes.errors.required">minutes is required</div>
+  </div>
+</div>
+
+
+    <!-- <br> -->
+
+    <div class="field-container">
+
+  <mat-form-field>
+    <mat-select formControlName="seconds" placeholder="Second">
+      <mat-option *ngFor="let second of seconds" [value]="second.id">
+        {{second.value}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <div *ngIf="submitted && editTimeForm.controls.seconds.errors" class="invalidMessageContainer">
+    <div *ngIf="editTimeForm.controls.seconds.errors.required">seconds is required</div>
+  </div>
+</div>
+
+    <!-- <br> -->
+    <div class="buttonContainer">
+      <button class="btn btn-primary mr-1">Reset</button>
+      <button class="btn btn-secondary" type="reset" (click)="resetTime()">Cancel</button>
+
+    </div>
+  </form>
+</div>

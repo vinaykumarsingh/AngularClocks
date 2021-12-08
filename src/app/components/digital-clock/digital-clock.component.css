@@ -1,0 +1,41 @@
+p {
+    font-family: Lato;
+  }
+  .clock-container{
+  
+    font-size:35px;
+    color:white;
+    height:100%;
+    font-weight: 500;
+  
+  
+  }
+
+   .clock1 {
+    top: 30%;
+    background-color: #3c434c;
+    width: 261px;
+    height: 60%;
+    margin: 10px auto;
+    padding: 30px;
+  }
+  .clock1 div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #202731;
+    width:25%;
+    height: 100%;
+    text-align: center;
+  }
+
+  .clock2 {
+    background-color: #cdd5dc;
+  }
+  .time{
+    width:100% !important;
+  }
+  :host{
+    font-family: Orbitron;
+  }
+  
