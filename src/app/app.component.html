@@ -22,15 +22,18 @@
   </a>
 </div>
 
-<div class="content" role="main">
-
-  <div class="clock-container">
-    <app-digital-clock></app-digital-clock>
-    <app-analog-clock></app-analog-clock>
+<div class="container-fluid content" role="main">
+  <div class="row clock-container">
+    <div class="col">
+      <app-analog-clock></app-analog-clock>
+    </div>
+    <div class="col">
+      <app-digital-clock></app-digital-clock>
+    </div>
   </div>
-  <div class="editclockForm">
-    <app-edit-clock></app-edit-clock>
+  <div class="row">
+    <div class="col editclockForm">
+      <app-edit-clock></app-edit-clock>
+    </div>
   </div>
-
-
 </div>

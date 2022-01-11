@@ -1,41 +1,50 @@
 p {
-    font-family: Lato;
-  }
-  .clock-container{
-  
-    font-size:35px;
-    color:white;
-    height:100%;
-    font-weight: 500;
-  
-  
-  }
+  font-family: Lato;
+}
 
-   .clock1 {
-    top: 30%;
-    background-color: #3c434c;
-    width: 261px;
-    height: 60%;
-    margin: 10px auto;
-    padding: 30px;
-  }
-  .clock1 div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #202731;
-    width:25%;
-    height: 100%;
-    text-align: center;
-  }
+.clock-container {
+  font-size: 35px;
+  color: white;
+  height: 100%;
+  font-weight: 500;
+}
 
-  .clock2 {
-    background-color: #cdd5dc;
-  }
-  .time{
-    width:100% !important;
-  }
-  :host{
-    font-family: Orbitron;
-  }
-  
+.digital-clock {
+  top: 30%;
+  background-color: #3c434c;
+  width: 270px;
+  height: 180px;
+  margin: 10px auto;
+  padding: 20px;
+}
+
+.digital-clock div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #202731;
+  width: 25%;
+  height: 100%;
+  text-align: center;
+}
+
+.digital-clock span {
+  color: red;
+  padding: 15px;
+}
+
+.clock2 {
+  background-color: #cdd5dc;
+}
+
+.time {
+  width: 100% !important;
+}
+
+:host {
+  font-family: Orbitron;
+}
+
+h1 {
+  text-align: center;
+}
